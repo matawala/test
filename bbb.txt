@@ -1,0 +1,2 @@
+this is a BBB file
+This is an entry from BranchA
