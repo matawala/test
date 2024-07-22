@@ -1,0 +1,21 @@
+pipeline {
+    agent any
+    
+    stages {
+        stage('Clone Repository') {
+            steps {
+                git branch: 'master', url: 'https://github.com/matawala/test.git'
+            }
+        }
+        stage('Run Ansible Playbook Example 1') {
+            steps {
+                ansiblePlaybook playbook: 'playbook.example1.yml'
+            }
+        }
+        stage('Run Ansible Playbook Example 2') {
+            steps {
+                ansiblePlaybook playbook: 'playbook.example1.yml'
+            }
+        }
+    }
+}
