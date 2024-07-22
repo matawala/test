@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Run Ansible Playbook Example 2') {
             steps {
-                ansiblePlaybook playbook: 'playbook.example1.yml'
+                ansiblePlaybook playbook: 'playbook.example2.yml'
             }
         }
     }
